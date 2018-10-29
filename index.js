@@ -1,5 +1,7 @@
 const chalk = require('chalk');
-console.log(chalk.blue("Hi my name is Curtis Kesner."));
-console.log(chalk.blue("This is a story about my dog Monte."));
-console.log(chalk.blue("My dog Monte is 11 years old and he is a black lab mix."));
-console.log(chalk.blue("Monte likes treats and going for long walks through the neighborhood."));
+const log = console.log;
+log(chalk.bgRed.bold("Hello ") + chalk.green("my name is") +  chalk.red(" Curtis Kesner."));
+log(chalk.blue("This is a story about my dog ") + chalk.bgBlackBright("Monte."));
+log(chalk.blue("My dog ") + chalk.bgBlackBright("Monte") + chalk.yellow(" is 11 years old and he is a black lab mix."));
+log(chalk.blue("Monte loves ") + chalk.bgMagentaBright("treats") + chalk.blue(" and ") + 
+chalk.bgMagentaBright("going for long walks") + chalk.blue(" through the neighborhood!"));
